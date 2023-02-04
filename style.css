@@ -1,3 +1,26 @@
 .divStyle{
     color: green;
 }
+
+.divsContainer{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 15px;
+}
+
+.div1,.div2,.div3{
+    width: 100px;
+    height: 100px;
+}
+
+.div1{
+    background-color: red;
+}
+
+.div2{
+    background-color: yellow;
+}
+
+.div3{
+    background-color: green;
+}
