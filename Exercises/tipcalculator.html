@@ -2,18 +2,58 @@
 <html>
     <head>
         <title>Tip Calculator</title>
-        <link rel="stylesheet" href="/Exercises/tipcalcstyle.css">
+        <link rel="stylesheet" href="tipcalcstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="title" class="divStyle">
-            <h2>Hello world</h2>
-        </div>
-        <div class="divsContainer">
-            <button id="red" class="div1 colorSquare" value="red"></button>
-            <button id="yellow" class="div2 colorSquare" value="yellow"></button>
-            <button id="green" class="div3 colorSquare" value="green"></button>
-        </div>
-        <button id="clrGame">Clear Game</button>
+        <main>
+            <div class="calcContainer">
+                <div class="text-field">
+                    <label>Bill total</label>
+                    <div class="inputContainer">
+                        <span>$</span>
+                        <input type="text" id="billTotal" placeholder="0.00">
+                    </div>
+                </div>
+                <div class="text-field">
+                    <label>Tip</label>
+                    <div class="inputContainer">
+                        <span>%</span>
+                        <input type="text" id="tipPers" placeholder="0">
+                    </div>
+                </div>
+                <div class="controlContainer">
+                    <div class="containerPart">
+                        <label>People</label>
+                        <div class="controls">
+                            <div>
+                                <button class="pplCountBtn">
+                                    +
+                                </button>
+                            </div>
+                            <span class="amountSpan">1</span>
+                            <div>
+                                <button class="pplCountBtn">
+                                    -
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerPart">
+                        <div class="totalContainer">
+                            <label>Total per Person</label>
+                            <p>
+                                $<span id="totalAmount">0.00</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>

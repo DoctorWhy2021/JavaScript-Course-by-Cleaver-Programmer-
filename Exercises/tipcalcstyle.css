@@ -1,0 +1,93 @@
+body{
+    padding-top: 10px;
+    background-color: #8d7cfb;
+    font-family: Itim,cursive;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+label{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+span{
+    font-family: Itim,cursive;
+}
+
+.calcContainer{
+    background-color: #17182d;
+    border-radius: 17px;
+    height: 630px;
+    width: 450px;
+    padding: 60px 25px;
+}
+
+.text-field{
+    margin-bottom: 1.8rem;
+}
+
+.inputContainer{
+    display: flex;
+    align-items: center;
+    background-color: #393b78;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 400px;
+}
+
+input[type='text']{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: inherit;
+}
+
+.controlContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.containerPart{
+    flex: 1;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+
+.pplCountBtn{
+    background-color: #8d7cfb;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.pplCountBtn:active{
+    opacity: 0.8;
+}
+
+.amountSpan{
+    margin: 10px;
+}
+
+.totalContainer{
+    display: flex;
+    justify-content: end;
+}
