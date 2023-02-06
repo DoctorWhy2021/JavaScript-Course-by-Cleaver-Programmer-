@@ -14,14 +14,14 @@
                     <label>Bill total</label>
                     <div class="inputContainer">
                         <span>$</span>
-                        <input type="text" id="billTotal" placeholder="0.00">
+                        <input type="text" id="billTotal" placeholder="0.00"  onchange="totalPerPers()">
                     </div>
                 </div>
                 <div class="text-field">
                     <label>Tip</label>
                     <div class="inputContainer">
                         <span>%</span>
-                        <input type="text" id="tipPers" placeholder="0">
+                        <input type="text" id="tipPers" placeholder="0" onchange="totalPerPers()">
                     </div>
                 </div>
                 <div class="controlContainer">
@@ -29,13 +29,13 @@
                         <label>People</label>
                         <div class="controls">
                             <div>
-                                <button class="pplCountBtn">
+                                <button class="pplCountBtn" onclick="addPpl()">
                                     +
                                 </button>
                             </div>
-                            <span class="amountSpan">1</span>
+                            <span id="pplAmount" onchange="totalPerPers()">1</span>
                             <div>
-                                <button class="pplCountBtn">
+                                <button class="pplCountBtn" onclick="removePpl()">
                                     -
                                 </button>
                             </div>
@@ -44,7 +44,7 @@
                     <div class="containerPart">
                         <div class="totalContainer">
                             <label>Total per Person</label>
-                            <p>
+                            <p class="totalAmount">
                                 $<span id="totalAmount">0.00</span>
                             </p>
                         </div>
