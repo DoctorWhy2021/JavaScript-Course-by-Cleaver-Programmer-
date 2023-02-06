@@ -1,27 +1,31 @@
+//Get access to html
 const billTotal = document.getElementById('billTotal');
 const tipPers = document.getElementById('tipPers');
 let pplAmount = document.getElementById('pplAmount');
 const totalAmount = document.getElementById('totalAmount');
 
-let pplNumb = Number(pplAmount.innerText);
-let bill = Number(billTotal.value);
-let tip = Number(tipPers.value);
+let pplNumb = parseInt(pplAmount.innerText);
 
-console.log(billTotal.innerText)
+//Increase amount of ppl
 function addPpl(){
     pplNumb++;
     pplAmount.innerText = pplNumb.toString();
+    totalPerPers();
 }
 
+//Decrease amount of ppl
 function removePpl(){
     if (pplNumb > 1){
         pplNumb--;
         pplAmount.innerText = pplNumb.toString();
+        totalPerPers();
     }
+    alert("You can't have less than 1 person!")
 }
 //Calculation for total per person
 const totalPerPers = () => {
-
-    totalAmount.innerText = (bill * (tip/100) / pplNumb).toString();
-    console.log(bill)
+    let bill = Number(billTotal.value);
+    let tip  = Number(tipPers.value) / 100;
+    totalAmount.innerText = ((bill + (bill * tip)) / pplNumb).toFixed(2);
 }
+
