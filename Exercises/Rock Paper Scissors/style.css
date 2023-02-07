@@ -1,0 +1,45 @@
+html{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+body{
+	background-color: #1c1c1c;
+}
+
+p{
+	margin: 3px;
+	font-size: 1.3rem;
+	color: white;
+}
+
+.controlsContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+button{
+	margin: 10px;
+	height: 80px;
+	width: 80px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 0 3px rgba(255, 255, 255, 1);
+	cursor: pointer;
+	transition: 0.15s;
+;
+
+}
+.rpsBtn:active,
+.clrBtn:active{
+	opacity: 0.7;
+}
+
+
+.btnImg{
+	font-size: 2rem;
+}

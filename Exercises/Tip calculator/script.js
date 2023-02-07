@@ -20,7 +20,6 @@ function removePpl(){
         pplAmount.innerText = pplNumb.toString();
         totalPerPers();
     }
-    alert("You can't have less than 1 person!")
 }
 //Calculation for total per person
 const totalPerPers = () => {

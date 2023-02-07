@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css" >
+		<meta charset="UTF-8">
+    </head>
+    <body>
+		<main>
+			<div>
+				<button class="rpsBtn" value="rock">
+					<span class="btnImg">&#9994;</span>
+				</button>
+				<button class="rpsBtn" value="paper">
+					<span class="btnImg">&#9995;</span>
+				</button>
+				<button class="rpsBtn" value="scissors">
+					<span class="btnImg">&#9996;</span>
+				</button>
+			</div>
+			<div class="controlsContainer">
+				<p id="player-score"></p>
+				<p id="hands"></p>
+				<p id="result"></p>
+				<button class="clrBtn" onclick="stopGame()">
+					<span class="btnImg">&#11093;</span>
+				</button>
+			</div>
+		</main>
+		<script src="script.js"></script>
+    </body>
+</html>

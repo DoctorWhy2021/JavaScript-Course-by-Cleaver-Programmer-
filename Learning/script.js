@@ -1,6 +1,6 @@
-let title = document.getElementById('title');
-title.innerText = 'Goodbye';
-title.style.color = 'red';
+//let title = document.getElementById('title');
+//title.innerText = 'Goodbye';
+//title.style.color = 'red';
 
 //Work with onclick
 
@@ -12,21 +12,27 @@ title.style.color = 'red';
 //yellowSqr.onclick = () => console.log('yellow');
 //greenSqr.onclick = () => console.log('green');
 
-const squares = document.querySelectorAll('.colorSquare');
-let timesClicked = { 'red' : 0, 'yellow' : 0, 'green' : 0}
-squares.forEach(square => {
-    square.onclick = () => {
-        timesClicked[square.value]++;
-        square.innerText = timesClicked[square.value];
-    };
-});
+//const squares = document.querySelectorAll('.colorSquare');
+//let timesClicked = { 'red' : 0, 'yellow' : 0, 'green' : 0}
+//squares.forEach(square => {
+//    square.onclick = () => {
+//        timesClicked[square.value]++;
+//        square.innerText = timesClicked[square.value];
+//    };
+//});
+//
+//const  clearGameBtn = document.getElementById('clrGame');
+//clearGameBtn.onclick = () => clearScores();
+//
+//
+//function clearScores(){
+//    squares.forEach(square => {
+//        timesClicked[square.value] = 0;
+//        square.innerText = '';});
+//}
+let fruits = ['banana', 'apple', 'orange', 'peel'];
 
-const  clearGameBtn = document.getElementById('clrGame');
-clearGameBtn.onclick = () => clearScores();
 
+const randomSelectFromArray = (fruits) => fruits[Math.floor(Math.random() * fruits.length)];
 
-function clearScores(){
-    squares.forEach(square => {
-        timesClicked[square.value] = 0;
-        square.innerText = '';});
-}
+console.log(randomSelectFromArray(fruits));
