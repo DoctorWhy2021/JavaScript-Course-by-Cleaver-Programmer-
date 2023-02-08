@@ -1,0 +1,47 @@
+html{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+body{
+	background-color: #173518;
+}
+
+button{
+	border: none;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+	background-color: #081108;
+	height: 30px;
+	width: 70px;
+	border-radius: 20px;
+	color: white;
+	font-family: Itim, cursive;
+}
+
+.backBTN{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	transition: 0.15s;
+}
+
+.backBTN:hover{
+	opacity: 0.8;
+}
+
+.btnContainer{
+	display: flex;
+	justify-content: center;
+}
+
+#newDogBtn{
+	height: 60px;
+	width: 120px;
+	transition: 0.15s;
+}
+
+#newDogBtn:active{
+	opacity: 0.8;
+}
