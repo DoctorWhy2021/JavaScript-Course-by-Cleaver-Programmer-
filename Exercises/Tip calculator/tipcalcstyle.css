@@ -98,3 +98,22 @@ input[type='text']{
     font-size: 2rem;
     margin: 0;
 }
+
+.backBTN{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	height: 30px;
+	width: 80px;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+	background-color: #17182d;
+	color: white;
+	font-family: inherit;
+	transition: 0.15s;
+}
+
+.backBTN:hover{
+	opacity: 0.9;
+}

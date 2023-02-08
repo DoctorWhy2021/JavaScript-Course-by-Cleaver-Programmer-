@@ -7,6 +7,7 @@ html{
 
 body{
 	background-color: #1c1c1c;
+	margin: 0;
 }
 
 p{
@@ -42,4 +43,19 @@ button{
 
 .btnImg{
 	font-size: 2rem;
+}
+
+.backBTN{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	height: 30px;
+	color: white;
+	background-color: #1c1c1c;
+	font-family: Itim, cursive;
+	transition: 0.15s;
+}
+
+.backBTN:hover{
+	opacity: 0.8;
 }

@@ -51,17 +51,16 @@ function showResult(score, playerChoice, computerChoice){
 		case -1:
 			result.innerText = "You lose!";
 			resultScore--;
-			playerScore.innerText = resultScore.toString();
 		break;
 		case 0:
 			result.innerText = "It's a draw!";
-			playerScore.innerText = resultScore.toString();
 		break;
 		case 1:
 			result.innerText = "You win!";
 			resultScore++;
-			playerScore.innerText = resultScore.toString();
 	}
+	playerScore.innerText = resultScore.toString();
+
 }
 
 function onClickRPS(playerChoice){
