@@ -1,0 +1,42 @@
+body{
+	background: green;
+	color: white;
+	font-family: Itim, cursive;
+}
+
+div{
+	margin-bottom: 10px;
+
+}
+
+#searchTextBox,
+#searchTextBox::placeholder,
+.heroBtn{
+	font-size: 18px;
+	color: inherit;
+	font-family: inherit;
+}
+
+#searchTextBox{
+	background: transparent;
+	padding: 7px;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	box-shadow: inset 0 0 3px rgba(0,0,0, 0.7);
+}
+
+#searchTextBox:focus{
+	outline: none;
+}
+
+.heroBtn{
+	background: darkgreen;
+	border: none;
+	padding: 7px;
+	border-radius: 15px;
+}
+
+#heroImg{
+	width: 300px;
+}
