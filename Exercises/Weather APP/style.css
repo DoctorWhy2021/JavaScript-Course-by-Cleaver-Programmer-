@@ -1,0 +1,38 @@
+main{
+	margin: auto;
+	width: 500px;
+	text-align: center;
+
+}
+
+h1{
+	color: orange;
+	font-size: 50px;
+}
+
+#cityName{
+	width: inherit;
+	height: 30px;
+	padding: 5px 8px;
+	border: 1px solid lightgray;
+	border-radius: 7px;
+	outline: none;
+    font-family: Arial, serif;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+}
+
+#searchBtn{
+	background-color: darkgray;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px 15px;
+	outline: 3px solid grey;
+	transition: 0.2s;
+}
+
+#searchBtn:active{
+	opacity: 0.8;
+}
